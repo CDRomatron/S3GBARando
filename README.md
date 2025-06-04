@@ -3,7 +3,7 @@ Attack of the rhynocs randomiser, written as a C# application.
 
 
 ## Credits:
-Muffinjet (for prior work on project)
+MuffinJets (for prior work on project)
 
 RayCarrot (for reverse engineering map data as part of ray1map)
 
