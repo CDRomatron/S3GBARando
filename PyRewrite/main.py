@@ -32,16 +32,22 @@ if __name__ == '__main__':
         rom_byte[location.address] = swap.item_to_id
 
         match location.item_type:
+            # Free Standing
             case 0x1:
                 rom_byte[quest_item_address + ((swap.item_to_id - 0x43) * 8) + 2] = 0x1
+            # Red
             case 0x2:
                 rom_byte[quest_item_address + ((swap.item_to_id - 0x43) * 8) + 2] = 0x1
+            # Green
             case 0x3:
                 rom_byte[quest_item_address + ((swap.item_to_id - 0x43) * 8) + 2] = 0x1
+            # Purple
             case 0x4:
                 rom_byte[quest_item_address + ((swap.item_to_id - 0x43) * 8) + 2] = 0x1
+            # Yellow
             case 0x5:
                 rom_byte[quest_item_address + ((swap.item_to_id - 0x43) * 8) + 2] = 0x1
+            # NPC
             case 0x0:
                 rom_byte[quest_item_address + ((swap.item_to_id - 0x43) * 8) + 2] = 0x0
             # case 0x6:
